@@ -49,8 +49,7 @@ steps:
     and
     (
       succeeded(),
-      eq(variables['Build.Reason'], 'PullRequest'),
-      #eq(variables['System.PullRequest.TargetBranch'], 'master')
+      eq(variables['Build.Reason'], 'PullRequest'),      
       eq(variables['System.PullRequest.TargetBranch'], 'security-scan')
     )
   inputs:
@@ -98,8 +97,7 @@ steps:
     and
     (
       succeeded(),
-      eq(variables['Build.Reason'], 'PullRequest'),
-      #eq(variables['System.PullRequest.TargetBranch'], 'master')
+      eq(variables['Build.Reason'], 'PullRequest'),      
       eq(variables['System.PullRequest.TargetBranch'], 'security-scan')
     )
 
@@ -109,8 +107,7 @@ steps:
     and
     (
       succeeded(),
-      eq(variables['Build.Reason'], 'PullRequest'),
-      #eq(variables['System.PullRequest.TargetBranch'], 'master')
+      eq(variables['Build.Reason'], 'PullRequest'),      
       eq(variables['System.PullRequest.TargetBranch'], 'security-scan')
     )
 
